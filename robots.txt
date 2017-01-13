@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /email.php
+Disallow: /redirect.php
+Disallow: /development_plan.txt
+Host: www.astulov.ru

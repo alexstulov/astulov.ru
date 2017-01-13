@@ -1,0 +1,96 @@
+<!-- yandex maps APE code -->
+<script>
+    ymaps.ready(init);
+    var myMap,
+            myPlacemark;
+
+    function init(){
+        myMap = new ymaps.Map("map-yandex", {
+            center: [56.732758, 37.162655],
+            zoom: 13
+        });
+
+        myPlacemark = new ymaps.Placemark([56.732758, 37.162655], {
+            hintContent: 'I am here!',
+            balloonContent: '<h1>I am here!</h1>'
+        });
+
+        myMap.geoObjects.add(myPlacemark);
+    }
+</script>
+<!-- yandex maps APE code -->
+
+<section class="breadcrumbs row">
+    <div class="container">
+        <ul>
+            <li><a href="/app/home" onclick="event.preventDefault(); linkClick(this);">Главная</a> /</li>
+            <li><h1>Контакты</h1></li>
+        </ul>
+    </div>
+</section>
+
+<acricle class="contacts vertical-padding">
+    <section class="contact-details row">
+        <div class="container">
+            <article class="contact-info col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <h1 class="heading uppercase">Информация</h1>
+                <p>График работы: пн-пт, 9:00-18:00</p>
+                <address>
+                    <span>
+                        АЛЕКСЕЙ СТУЛОВ<br/>
+                        г. Дубна,<br/>
+                        Московская обл., Россия.<br/>
+                    </span><br/>
+                    <span>
+                        Телефон: +7 915 005-28-01<br/>
+                        Skype: kinos_pro<br/>
+                        E-mail: kinos.pro@yandex.ru<br/>
+                    </span>
+                </address><br/><br/>
+            </article>
+            <article class="contact-form col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                <form id="feedback" method="POST">
+                    <legend>
+                        <a name="feedback-form"></a>
+                        <h1 class="heading uppercase">Форма обратной связи</h1>
+                    </legend>
+                    <div id="response" class="row response"></div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <label for="name">Имя: </label>
+                            <input type="text" value="" name="name" id="name" placeholder="Имя:" autocomplete="on">
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <label for="email">E-mail: </label>
+                            <input type="email" value="" name="email" id="email" placeholder="E-mail:" autocomplete="on">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div  class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <label for="theme">Тема: </label>
+                            <input type="text" class="last-input" value="" name="theme" id="theme" placeholder="Тема:" autocomplete="on">
+                        </div>
+                    </div>
+                    <div class="row form-message">
+                        <label for="message">Сообщение: </label>
+                        <textarea placeholder="Сообщение:" name="message" id="message" spellcheck="true"></textarea>
+                    </div>
+                    <div class="row buttons">
+                        <div class="col-lg-6 col-md-8 col-sm-6 col-xs-12">
+                            <button type="button" onclick="AjaxFormRequest('response', 'feedback', 'mail.php', this.form);" value="Send">Отправить</button>
+                            <button type="reset" value="Clear">Очистить</button>
+                        </div>
+                    </div>
+                </form>
+            </article>
+        </div>
+    </section>
+    <section class="map-yandex row">
+        <div class="container">
+            <div id="map-yandex" class="col-lg-12 col-md-12 col-sm-12 col-xs-12"></div>
+            <div class="mini-map col-xs-12">
+                <img class="js-lazy-image" data-original="./img/mini-map.png" width="100%" height="auto" alt="г. Дубна на карте московской области">
+            </div>
+        </div>
+    </section>
+</acricle>

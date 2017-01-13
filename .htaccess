@@ -1,0 +1,10 @@
+RewriteEngine On
+
+RewriteRule ^$ /app/home [R=301,L]
+RewriteRule ^app/home$ /app/ [L]
+RewriteRule ^app/about$ /app/ [L]
+RewriteRule ^app/portfolio$ /app/ [L]
+RewriteRule ^app/services$ /app/ [L]
+RewriteRule ^app/contacts$ /app/ [L]
+
+ErrorDocument 404 http://astulov.ru/app/_404.html

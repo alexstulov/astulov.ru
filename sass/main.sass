@@ -1,0 +1,157 @@
+@import "bourbon"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+.uppercase
+  text-transform: uppercase
+
+.vertical-padding
+  padding: 90px 0
+
+.heading
+  font-size: 30px
+  font-weight: bold
+
+.hidden
+  display: none
+
+
+.breadcrumbs
+  text-transform: uppercase
+  background-color: #000000
+  color: #ffffff
+  padding: 40px 0
+
+  ul
+    list-style: none
+    padding: 0
+    margin: 0
+
+    li
+      display: inline-block
+      padding: 0
+      margin: 0
+      font-size: 25px
+      font-weight: bold
+
+      a
+        color: #ffffff
+        text-decoration: none
+
+      h1
+        margin: 0
+        padding: 0
+        font-size: 25px
+        font-weight: bold
+
+    li:first-child a
+        cursor: pointer
+        color: #6c6c6c
+
+    li:first-child:hover a
+      text-decoration: underline
+      color: #ffffff
+
+main
+  z-index: 2
+// FOOTER BEGIN
+footer
+  .footer-block
+
+    padding-top: 50px
+    color: #ffffff
+    text-align: center
+
+    .footer-menu
+
+      .menu-block
+        cursor: default
+
+        span
+          margin: 0
+          display: inline-block
+          text-align: center
+          padding: 0 0 0 40px
+          font-weight: bold
+          cursor: pointer
+        span a
+          color: #ffffff
+          text-decoration: none
+
+        span::after
+          content: "|"
+          padding-left: 40px
+          cursor: pointer
+
+        span:first-child
+          padding-left: 0
+
+        span:last-child::after
+          content: ""
+          padding-left: 0
+
+        .active a, span:hover a
+          color: #db242c
+
+        span:hover::after, .active::after
+          color: white
+
+    .footer-logo
+
+      .brand
+        margin-top: 30px
+        font-family: "AlfaSlabOne", sans-serif
+        font-size: 24px
+
+        span
+          margin: 0
+          padding: 0
+          color: white
+          text-decoration: none
+
+  .copyrights
+    color: #a7a7a7
+    font-size: 16px
+    text-align: center
+    padding: 10px 0 30px
+
+// FOOTER END
+
+.to-top
+  position: fixed
+  z-index: 3
+  display: none
+  width: 32px
+  height: 32px
+  right: 55px
+  bottom: 55px
+  cursor: pointer
+  background: url('../img/totop.png') no-repeat
+
+.to-top:hover
+  background: url('../img/totop_hover.png') no-repeat
+//ALWAYS END
+
+
+@import "_media.sass"

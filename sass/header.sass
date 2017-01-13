@@ -1,0 +1,187 @@
+@import "bourbon/bourbon"
+
+
+html.ie
+  body
+    display: none
+
+body
+  background-color: #d9d9d9
+  color: #000000
+  background: url('../img/gallery_img.jpg') no-repeat fixed
+  background-size: cover
+  overflow-x: hidden
+  width: 100%
+  min-width: 350px
+  position: relative
+  line-height: 1.6
+  font-family: "OpenSansRegular", sans-serif
+  font-size: 18px
+  font-weight: normal
+  margin: 0
+  padding: 0
+
+.black-back
+  background-color: black
+
+header
+  width: 100%
+  margin: 0
+  padding: 0
+
+  .menu-block-minimized, .socials-block-minimized
+    display: none
+
+  .logo
+    padding: 20px 0 16px 0
+    color: white
+
+    .logo__brand
+      text-transform: uppercase
+
+      h1
+        font-family: "AlfaSlabOne", sans-serif
+        font-size: 60px
+        margin: 10px 0 16px 0
+        padding: 0
+        height: 30px
+        line-height: 30px
+        font-weight: normal
+        cursor: pointer
+
+        a
+          margin: 0
+          padding: 0
+          line-height: 30px
+          height: 30px
+          color: white
+          text-decoration: none
+
+      h2
+        font-weight: light
+        font-size: 12px
+        margin: 18px 0 0 0
+        padding: 0
+
+  .main-menu
+    background-color: #ffffff
+    padding: 80px 0 0 0
+
+    span
+      display: inline-block
+      text-align: center
+      vertical-align: middle
+      height: 50px
+      width: 150px
+      margin-right: 5px
+      font-size: 18px
+      font-weight: bold
+      border: 2px solid #d9d9d9
+      border-radius: 5px
+      cursor: pointer
+
+      a
+        padding-top: 10px
+        display: block
+        height: 100%
+        color: #6c6c6c
+        text-decoration: none
+
+      ul
+        display: none
+        position: absolute
+        font-size: 14px
+        list-style: none
+        padding-left: 10px
+        margin: 10px 0 0 0
+        border: 2px solid #d9d9d9
+        color: #6c6c6c
+        border-radius: 5px
+        background-color: #ffffff
+        text-align: left
+        z-index: 4
+
+        li
+          padding: 8px 0
+          margin: 0
+          width: 125px
+
+          a
+            color: #6c6c6c
+            text-decoration: none
+
+        .active a
+          color: #000000
+        .active:hover a
+          color: #6c6c6c
+
+        .active
+          border: none
+        .active:hover
+          border: none
+
+    span:hover ul
+      display: block
+    span:active ul
+      display: block
+
+    .active a, span:hover a
+      color: #000000
+    .active, span:hover
+      border: 2px solid #000000
+
+    .active ul li a
+        color: #6c6c6c
+    .active ul li a:hover
+      color: #000000
+    .active ul li.active a
+      color: #000000
+    .active ul li.active:hover a
+      color: #6c6c6c
+
+    .socials
+      border: none
+      padding: 7px 0 10px
+      margin: 0
+      width: 72px
+      color: #ffffff
+      border-radius: 5px
+      font-size: 22px
+
+    .socials:hover
+      background-color: #000000
+      border: none
+      color: #ffffff
+
+    .twitter
+      @extend .socials
+      background-color: #89c9fa
+
+    .vkontakte
+      @extend .socials
+      background-color: #4e7094
+
+    .facebook
+      @extend .socials
+      background-color: #47639e
+
+  .loader-image
+    top: 250px
+    position: absolute
+    width: 100%
+    text-align: center
+    z-index: 1
+    img
+      width: 10%
+      height: auto
+
+.error-page-404
+  width: 100%
+  text-align: center
+  hgroup
+    font-family: AlfaSlabOne
+    h1
+      font-size: 60px
+    h2
+      font-size: 40px
+

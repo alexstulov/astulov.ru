@@ -1,0 +1,277 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+
+  body
+    ///** HEADING STYLES **/
+    header
+      .main-menu
+        .menu-block
+          display: none
+
+        .menu-block-minimized
+          display: block
+          .js-more
+            .js-services, .js-portfolio
+              display: none
+
+        .socials-block
+          display: none
+
+        .socials-block-minimized
+          display: block
+          span
+            width: 100px
+            margin: 0
+            color: #03aaf4
+            border: 2px solid #03aaf4
+            ul
+              border: none
+              background: none
+              padding-left: 0
+              text-align: center
+              li
+                padding: 10px 0
+                margin: 0 4px
+                width: 90px
+    ///** HEADING STYLES **/
+    ///** HOMEPAGE STYLES **/
+    .services-home
+      .bottom-services
+        margin-bottom: 50px
+    ///** HOMEPAGE STYLES **/
+    ///** ABOUTPAGE STYLES **/
+    .who-we-are
+        .image
+          margin: 70px 0 0 0
+
+    .services
+      section
+        .details
+          .proposition
+            margin-top: 50px
+    .asdf
+    ///** ABOUTPAGE STYLES **/
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+  body
+    ///** HOMEPAGE STYLES **/
+    .services-home
+      .top-services, .bottom-services
+        .services__post
+          margin-bottom: 40px
+    .tools
+      .tools__image
+        img
+          margin-bottom: 50px
+    .portfolio
+      section
+        article
+          figure.photo
+            margin-bottom: 60px
+          div
+            display: none
+
+    .goals
+      background: none #f7f5ee
+    ///** HOMEPAGE STYLES **/
+    ///** ABOUTPAGE STYLES **/
+    .who-we-are
+      .image
+        margin: 0 0 70px 0
+    .main-objectives
+      .main-objectives__plan
+        margin-bottom: 100px
+    .team
+      section
+        .photo
+          height: auto
+        article
+          .member-description
+            padding: 80px 0 50px
+    ///** ABOUTPAGE STYLES **/
+    ///** BLOGPAGE STYLES **/
+    .blog
+      .right-sidebar
+        ul
+          margin-bottom: 50px
+        .calendar
+          margin-bottom: 50px
+    .asdf
+    ///** BLOGPAGE STYLES **/
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+
+  body
+    ///** HEADING STYLES **/
+    header
+      .main-menu
+        .menu-block
+          display: none
+
+        .menu-block-minimized
+          display: block
+          .js-services, .js-portfolio
+            display: none
+          .js-more
+            .js-services, .js-portfolio
+              display: block
+
+        .socials-block
+          display: none
+
+        .socials-block-minimized
+          display: block
+          span
+            width: 100px
+            margin: 0
+            color: #03aaf4
+            border: 2px solid #03aaf4
+            ul
+              border: none
+              background: none
+              padding-left: 0
+              text-align: center
+              li
+                padding: 10px 0
+                margin: 0 4px
+                width: 90px
+      .loader-image
+        img
+          width: 30%
+    .portfolio
+      section
+        article
+          figure.photo
+            margin-bottom: 400px
+    .footer-block
+      .footer-menu
+
+        .menu-block
+          span
+            padding-bottom: 20px
+    ///** HEADING STYLES **/
+    ///** HOMEPAGE STYLES **/
+    .blog
+      .blog__post
+        h1
+          width: 70%
+          top: 170px
+          font-size: 20px
+    ///** HOMEPAGE STYLES **/
+    ///** ABOUTPAGE STYLES **/
+    .main-objectives
+      article
+        margin-bottom: 100px
+    ///** ABOUTPAGE STYLES **/
+    ///** CONTACTSPAGE STYLES **/
+    .contacts
+      .contact-details
+        .contact-form
+          form
+            div
+              div
+                input
+                  margin-bottom: 20px
+
+    .asdf
+    ///** CONTACTSPAGE STYLES **/
+  /*Disable Animation on Mobile Devices*/
+  .animated
+      /*CSS transitions*/
+      -o-transition-property: none !important
+      -moz-transition-property: none !important
+      -ms-transition-property: none !important
+      -webkit-transition-property: none !important
+      transition-property: none !important
+      /*CSS transforms*/
+      -o-transform: none !important
+      -moz-transform: none !important
+      -ms-transform: none !important
+      -webkit-transform: none !important
+      transform: none !important
+      /*CSS animations*/
+      -webkit-animation: none !important
+      -moz-animation: none !important
+      -o-animation: none !important
+      -ms-animation: none !important
+      animation: none !important
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+  body
+    background: none #806e59
+    ///** HEADING STYLES **/
+    header
+      .logo
+        .logo__brand
+          text-align: center
+          h1
+            line-height: 60px
+            height: 60px
+          h2
+            line-height: 12px
+            margin-top: 70px
+      .main-menu
+        .menu-block-minimized, .socials-block-minimized
+          margin-bottom: 20px
+          width: 50%
+          text-align: center
+
+    .services-home
+      .services__post
+    .promo
+      .promo__image
+        display: none
+
+    .tools
+      .tools__image
+        display: none
+    ///** HEADING STYLES **/
+    .portfolio
+      section
+        article
+          figure.photo
+            margin-bottom: 150px
+    ///** HOMEPAGE STYLES **/
+    .blog
+      .blog__post
+        h1
+          width: 80%
+          top: 130px
+          font-size: 15px
+    ///** HOMEPAGE STYLES **/
+    ///** ABOUTPAGE STYLES **/
+    .who-we-are
+      .image
+        display: none
+    .main-objectives
+      article
+        margin-bottom: 70px
+    .team
+      section
+        article
+          .member-description
+            padding: 100px 0 50px
+    .skills
+      section
+        margin-bottom: 30px
+    .contacts
+      .map-yandex
+        #map-yandex
+          display: none
+        .mini-map
+          display: block
+          padding-bottom: 20px
+      .contact-details
+        .buttons
+          button
+            width: 100%
+            margin-bottom: 40px
+    ///** ABOUTPAGE STYLES **/
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+  /**/

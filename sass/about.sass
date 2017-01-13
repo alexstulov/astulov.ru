@@ -1,0 +1,283 @@
+header .main-menu
+  padding-bottom: 90px
+
+.who-we-are
+  background-color: #ffffff
+
+  .image
+    margin-left: -130px
+
+  h1
+    margin: 0 0 20px 0
+    padding: 0
+
+  .who-we-are__subs
+
+    p
+      margin-bottom: 40px
+      line-height: 25px
+
+    ul
+      list-style: none
+      margin: 0 0 20px 0
+      padding: 0
+      cursor: pointer
+
+      li:before
+        content: '\2714\00A0\00A0\00A0\00A0\00A0'
+
+      li
+        font-size: 14px
+        font-weight: bold
+        line-height: 30px
+        cursor: pointer
+
+        a
+          color: #000000
+          text-decoration: none
+
+      li:hover, li:hover a
+        color: #db262c
+
+    .button
+
+      span
+        text-transform: uppercase
+        text-align: center
+        font-size: 14px
+        font-weight: bold
+        border-radius: 5px
+        display: inline-block
+        height: 50px
+        width: 270px
+        background: none
+        border: 2px solid #d9d9d9
+        color: #6c6c6c
+
+        a
+          padding-top: 12px
+          display: block
+          height: 100%
+          text-decoration: none
+          color: #000000
+
+        a:hover
+          text-decoration: none
+
+      span:hover a
+        color: #db262c
+
+
+
+.main-objectives
+  color: #ffffff
+
+  h1
+    text-align: center
+    padding: 0 0 40px 0
+    margin: 0
+
+  article
+    text-align: center
+
+    .image
+      margin-bottom: 25px
+
+    h1
+      text-transform: uppercase
+      font-size: 17px
+      font-weight: bold
+      margin: 0 0 20px 0
+      padding: 0 0 0 20px
+      cursor: pointer
+    h1:hover
+      color: #db262c
+
+    p
+      margin: 0
+      padding: 0
+
+
+.team
+  background-color: #ffffff
+  color: #000000
+
+  h1
+    text-align: center
+    padding-bottom: 40px
+
+  section
+
+    article
+
+      .photo
+        height: 300px
+
+        figcaption
+
+          h1
+            background-color: #000000
+            color: #ffffff
+            font-size: 18px
+            font-weight: bold
+            margin: 0
+            padding: 10px
+            position: relative
+            bottom: 80px
+            width: 80%
+            text-align: left
+            cursor: pointer
+
+          h1:hover
+            background-color: #ffffff
+            color: #000000
+
+        figcaption:hover
+          background-color: #ffffff
+          color: #000000
+
+      .member-description
+        margin-top: -10px
+
+        p
+          font-size: 14px
+          line-height: 18px
+          margin: -10px 0 50px 0
+
+        .socials
+          cursor: default
+
+          div
+            display: inline-block
+            width: 39px
+            height: 39px
+            border: 2px solid #e1e1e1
+            border-radius: 50%
+            cursor: pointer
+
+            img
+              margin: 10px
+
+          div:first-child img
+            margin: 11px 14px
+
+          div:hover
+            border: 2px solid #db262c
+
+
+=percent-position($top, $left)
+  font-size: 30px
+  font-weight: bolder
+  color: #000000
+  display: block
+  position: relative
+  width: 100%
+  text-align: center
+  top: $top
+  left: $left
+
+.skills
+  color: #ffffff
+  background: rgba(20, 10, 10, .35)
+  text-align: center
+
+  h1
+    padding: 0
+    margin: 0
+
+  section
+
+    figure
+      text-align: center
+      margin-bottom: 35px
+
+      figcaption
+        text-transform: uppercase
+        font-size: 20px
+        font-weight: bolder
+
+    span
+      font-weight: bold
+
+  .illustration
+
+    figure
+
+      figcaption
+        +percent-position(125px, -10px)
+
+  .typography
+
+    figure
+
+      figcaption
+        +percent-position(125px, 0px)
+
+  .ui-design
+
+    figure
+
+      figcaption
+        +percent-position(125px, -10px)
+
+  .web-design
+
+    figure
+
+      figcaption
+        +percent-position(125px, 5px)
+
+
+.reviews
+  color: #000000
+  background-color: #ffffff
+  text-align: center
+
+  h1
+    padding: 0
+    margin-bottom: 50px
+
+  .review
+
+    p
+      text-align: left
+      line-height: 23px
+      display: block
+      border: 2px solid #dcd9d5
+      border-radius: 5px
+      padding: 20px 30px 50px 30px
+      margin-bottom: 30px
+
+      img
+        position: absolute
+        left: 100px
+        bottom: 133px
+
+    .person
+      text-align: left
+      margin: 0
+      padding: 0
+
+      img
+        display: inline-block
+        margin: 0 0 30px 0
+        padding: 0
+
+      .person-contacts
+        display: inline-block
+        padding: 0 0 0 20px
+
+        .person-name
+          cursor: pointer
+          font-weight: bold
+
+        .person-email
+          cursor: pointer
+          font-size: 14px
+          color: #6c6c6c
+
+        .person-name:hover, .person-email:hover
+          color: #db262c
+
+
+
